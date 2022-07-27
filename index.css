@@ -1,0 +1,28 @@
+h1 {
+    text-align: center;
+}
+
+.test {
+    display: flex;
+    justify-content: center;
+}
+
+.word {
+    margin-right: 100px;
+}
+
+.nextButton {
+    margin: auto;
+    margin-top: 30px;
+    font-size: large;
+    width: 80px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+.selectFileButton {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
