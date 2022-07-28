@@ -4,6 +4,7 @@ var currentLine = 0;
 
 //fileの中身を１行ずつ配列に格納
 document.getElementById('file').onchange = function(){
+    
 var file = this.files[0];
 var reader = new FileReader();
 
@@ -16,6 +17,7 @@ reader.readAsText(file);
 
 //単語、意味の順に表示
 const nextWord = () => {
+
     if(currentLine===fileLines){
         alert('テスト終了')  
     }else{
@@ -29,12 +31,12 @@ const nextWord = () => {
     }
 }
 
-const showList = () => {
-    for(var line = 0; line < fileLines-1; line++){
-        if(line%2 >0){
-            test.innerHTML += `<h2 class='meaning'> ${fileContentArray[line]} </h2>`;
-        }else{
-            test.innerHTML = `<h2 class='word'> ${fileContentArray[line]} </h2>`;
-        }
+const beforeWord = () => {
+
+        test.innerHTML = '';
+        if(currentLine%2 >0) currentLine-=3
+        else currentLine-=2
+
+        test.innerHTML = `<h2 class='word'> ${fileContentArray[currentLine]} </h2>`;
+        currentLine++;
     }
-}

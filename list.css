@@ -46,47 +46,10 @@ h1 {
 }
 
 .test {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    margin: auto;
+    text-align: center;
     width: 100%;
     height: 250px;
-}
-
-.word {
-    margin: 0px;
-    margin-right: 100px;
-}
-
-.meaning {
-    margin: 0px;
-}
-
-.beforeNextButton {
-    display: flex;
-    justify-content: center;
-}
-
-.nextButton {
-    margin: auto;
-    margin-top: 30px;
-    margin-left: 20px;
-    font-size: large;
-    width: 80px;
-    height: 40px;
-    display: flex;
-    justify-content: center;
-}
-
-.beforeButton {
-    margin: auto;
-    margin-top: 30px;
-    margin-right: 20px;
-    font-size: large;
-    width: 80px;
-    height: 40px;
-    display: flex;
-    justify-content: center;
 }
 
 .selectFileButton {
